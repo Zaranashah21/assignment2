@@ -1,5 +1,0 @@
-{
-  "rewrites":[
-    { "source":"/","destination":"/ques20.html"}
-  ]
-}
