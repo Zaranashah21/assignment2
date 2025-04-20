@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REM vs PX Showdown</title>
+  <style>
+    :root {
+      font-size: 16px;
+    }body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #e0eafc);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #333;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  border-left: 5px solid #4caf50;
+  padding-left: 0.75rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 10px 25px rgb(109, 191, 232);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-px {
+  padding: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.card-rem {
+  padding: 1.25rem;
+  width: 18.75rem;
+  font-size: 1rem;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+code {
+  background: #ecf0f1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .card-px,
+  .card-rem {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="section">
+    <h2>Card using <code>px</code>:</h2>
+    <div class="card card-px">
+      <p>This card is styled using <strong>pixels (px)</strong>. Pixels are fixed units, so they don’t adapt when users change their browser settings or base font size.</p>
+    </div>
+  </div>  <div class="section">
+    <h2>Card using <code>rem</code>:</h2>
+    <div class="card card-rem">
+      <p>This card uses <strong>rems (root em)</strong>. It's based on the root font size, so it's more flexible and accessible—great for responsive design.</p>
+    </div>
+  </div></body>
+</html>

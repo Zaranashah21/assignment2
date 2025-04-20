@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Power</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 251, 251, 0.5);
+}
+
+.social-icons {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  background: #555;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  margin-top: 80px;
+  padding: 2rem;
+}
+
+.relative-box {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border: 2px dashed #000000;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #1ab95a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.fixed-note {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4c4caf;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Positioning Power</h1>
+    <p>Showing off position: static, relative, absolute, fixed!</p>
+  </header>  <div class="social-icons">
+    <a href="#">F</a>
+    <a href="#">T</a>
+    <a href="#">I</a>
+  </div>  <div class="container">
+    <div class="relative-box">
+      <p>This box is <strong>relative</strong> positioned.</p>
+      <div class="absolute-box">I'm absolutely placed inside!</div>
+    </div>
+  </div>  <div class="fixed-note">I'm always on screen!</div>
+</body>
+</html>

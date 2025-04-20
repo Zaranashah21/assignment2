@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semantic HTML Party</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #a179da;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #db9dd7;
+    }
+
+    nav {
+      background: #c114d7;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #000000;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+      color: #df358a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      color: #666;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
+    section a{
+        color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Semantic Party!</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About the Party</h2>
+      <p>This party is for semantic tags only. No anonymous <code>&lt;div&gt;</code> tags allowed unless absolutely necessary!</p>
+    </section>
+
+    <section id="events">
+      <h2>Event Highlights</h2>
+      <ul>
+        <li>Intro dance by &lt;header&gt;</li>
+        <li>Navigation conga line by &lt;nav&gt;</li>
+        <li>Main attraction by &lt;main&gt; and &lt;section&gt;</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>RSVP at <a href="mailto:zaranashah71@.com">zaranahsha71@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Semantic Party Co.</p>
+  </footer>
+</body>
+</html>

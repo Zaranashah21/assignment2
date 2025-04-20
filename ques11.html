@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Royalty</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #cd88a7;
+  color: rgb(56, 51, 51);
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.sidebar {
+  background-color: #52394e;
+  padding: 1rem;
+  width: 250px;
+  color:  rgb(255, 238, 238);
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f2e9e4;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Royalty</h1>
+    <p>Bow before the layout that bends to every screen!</p>
+  </header>  <div class="container">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Your loyal companion, always by your side (or below on mobile).</p>
+    </aside><main class="main">
+  <h2>Main Content</h2>
+</main>
+  </div> 
+  <footer>
+    <p>Crafted with caffeine & clever code — © 2025 Responsive Royalty. All excuses reserved.</p>
+  </footer>
+</body>
+</html>

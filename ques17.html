@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Gallery Flex</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #121212;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ed0000;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(255, 81, 0);
+}
+
+@media (max-width: 600px) {
+  .gallery img {
+    max-width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>Meme Gallery Flex</h1>
+  <div class="gallery">
+    <img src="https://i.imgflip.com/30b1gx.jpg" alt="Meme 1">
+    <img src="https://i.imgflip.com/26am.jpg" alt="Meme 2">
+    <img src="https://i.imgflip.com/1bij.jpg" alt="Meme 3">
+    <img src="https://i.imgflip.com/4/3si4.jpg" alt="Meme 5">
+    
+  </div>
+</body>
+</html>

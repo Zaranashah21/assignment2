@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #ffe6e6, #e0f7fa);
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .fancy-text {
+    color: #d32f2f;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    .fancy-text {
+      font-size: 16px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }

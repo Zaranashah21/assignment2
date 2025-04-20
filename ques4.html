@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Flex</title>
+  <style>
+
+    body {
+      display: flex; /* Think of this like arranging items in a row or column nicely */
+      justify-content: center; /* Puts the box in the center horizontally */
+      align-items: center; /* Puts the box in the center vertically */
+      height: 100vh; /* Makes the body take up the full height of the screen */
+      margin: 0; /* Removes default space around the page */
+      background-color:aquamarine; /* silver background */
+    }
+.box {
+  padding: 20px; /* This is space inside the box */
+  margin: 20px; /* This is the space outside the box, like the air around it */
+  border: 3px solid #eae6e6; /* This is the border around the box */
+  background-color:rgb(16, 20, 70); /* The box's paint job */
+  max-width: 100%; /* Makes sure it doesn't get too wide on small screens */
+  font-family: Arial, sans-serif ; /* Just picking a nice clean font */
+  text-align: center;
+  box-shadow: 0 4px 8px rgb(59, 59, 121); /* Adds a little shadow for style */
+  
+}
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1 style="color:aquamarine">Hello Grandma!</h1>
+    <p style="color:aquamarine">This is a comfy, colorful box with padding, margin, border, and background color. Like your favorite armchair, but on the web.</p>
+  </div>
+</body>
+</html>
